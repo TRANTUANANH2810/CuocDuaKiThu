@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBox
+        android:id="@+id/checkboxThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="13dp" />
+
+    <CheckBox
+        android:id="@+id/checkboxTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkboxThree"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="40dp" />
+
+    <CheckBox
+        android:id="@+id/checkboxOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkboxTwo"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="29dp" />
+
+    <SeekBar
+
+        android:id="@+id/seebarThree"
+        android:layout_width="818dp"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginBottom="9dp"
+        android:layout_toRightOf="@+id/checkboxThree"
+        android:thumb="@drawable/pokemon_icon_pm0006_00_pgo_copy2019" />
+
+    <SeekBar
+        android:id="@+id/seebarTwo"
+        android:layout_width="1266dp"
+        android:layout_height="81dp"
+        android:layout_above="@+id/seebarThree"
+        android:layout_marginLeft="27dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toRightOf="@+id/checkboxTwo"
+        android:thumb="@drawable/pokemon_icon_027_00" />
+
+    <SeekBar
+
+        android:id="@+id/seebarOne"
+        android:layout_width="831dp"
+        android:layout_height="99dp"
+        android:layout_above="@+id/seebarTwo"
+
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/checkboxOne"
+        android:maxHeight="15dp"
+        android:paddingStart="16dp"
+        android:thumb="@drawable/pokemon_icon_133_00_11"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <ImageView
+    android:layout_centerHorizontal="true"
+        android:layout_width="526dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textviewDiemso"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="100"
+        android:textAlignment="center"
+        android:textColor="#ff00"
+        android:textSize="60sp" />
+
+    <ImageButton
+        android:id="@+id/buttonPlay"
+        android:layout_width="179dp"
+        android:layout_height="149dp"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:src="@drawable/play" />
+</RelativeLayout>
